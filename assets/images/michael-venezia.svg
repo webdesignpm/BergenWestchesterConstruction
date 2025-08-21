@@ -1,0 +1,13 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5a87;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a365d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad2)"/>
+  <circle cx="200" cy="150" r="60" fill="rgba(255,255,255,0.2)"/>
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Michael Venezia</text>
+  <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="14">Owner &amp; Master Craftsman</text>
+  <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial, sans-serif" font-size="12">30+ Years Experience</text>
+</svg>

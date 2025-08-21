@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bergen Westchester Construction Group, LLC</title>
+    <meta name="description" content="View our portfolio of completed construction projects in NJ & NY. Kitchen renovations, bathroom remodeling, home additions, and more.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/logo.svg" alt="Bergen Westchester Construction Group, LLC" class="nav__logo-img">
+                <span class="nav__logo-text">Bergen Westchester<br><small>Construction Group, LLC</small></span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link active-link">Portfolio</a></li>
+                    <li class="nav__item"><a href="index.html#reviews" class="nav__link">Reviews</a></li>
+                    <li class="nav__item"><a href="index.html#process" class="nav__link">Process</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <a href="tel:+12015550123" class="nav__phone">
+                    <i class="fas fa-phone"></i>
+                    <span>(201) 555-0123</span>
+                </a>
+                <a href="index.html#contact" class="btn btn--primary">Request Estimate</a>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Portfolio Hero -->
+        <section class="portfolio-hero section">
+            <div class="container">
+                <div class="portfolio-hero__content">
+                    <h1 class="portfolio-hero__title">Our Project Portfolio</h1>
+                    <p class="portfolio-hero__subtitle">
+                        Explore our completed projects and see the quality craftsmanship 
+                        that has made us a trusted name in construction for over 30 years.
+                    </p>
+                    <div class="portfolio-stats">
+                        <div class="portfolio-stat">
+                            <span class="portfolio-stat__number">500+</span>
+                            <span class="portfolio-stat__label">Projects Completed</span>
+                        </div>
+                        <div class="portfolio-stat">
+                            <span class="portfolio-stat__number">30+</span>
+                            <span class="portfolio-stat__label">Years Experience</span>
+                        </div>
+                        <div class="portfolio-stat">
+                            <span class="portfolio-stat__number">100%</span>
+                            <span class="portfolio-stat__label">Satisfaction Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="portfolio-filter section">
+            <div class="container">
+                <div class="portfolio__filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="kitchens">Kitchens</button>
+                    <button class="filter-btn" data-filter="bathrooms">Bathrooms</button>
+                    <button class="filter-btn" data-filter="additions">Additions</button>
+                    <button class="filter-btn" data-filter="basements">Basements</button>
+                    <button class="filter-btn" data-filter="decks">Decks & Outdoor</button>
+                    <button class="filter-btn" data-filter="millwork">Millwork</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid section">
+            <div class="container">
+                <div class="portfolio__grid">
+                    <!-- Kitchen Projects -->
+                    <div class="portfolio-item" data-category="kitchens">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/kitchen-1-before.jpg" alt="Modern kitchen renovation before" class="portfolio-img before">
+                            <img src="assets/images/portfolio/kitchen-1-after.jpg" alt="Modern kitchen renovation after" class="portfolio-img after">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Modern Kitchen Transformation</h3>
+                                    <p class="portfolio-item__location">Ridgewood, NJ</p>
+                                    <p class="portfolio-item__description">Complete kitchen renovation with custom cabinetry, quartz countertops, and modern appliances.</p>
+                                    <div class="portfolio-item__toggle">
+                                        <span class="toggle-label">Before</span>
+                                        <div class="toggle-switch">
+                                            <input type="checkbox" class="before-after-toggle">
+                                            <span class="slider"></span>
+                                        </div>
+                                        <span class="toggle-label">After</span>
+                                    </div>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 3 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-home"></i> Kitchen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="kitchens">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/kitchen-2-before.jpg" alt="Traditional kitchen renovation before" class="portfolio-img before">
+                            <img src="assets/images/portfolio/kitchen-2-after.jpg" alt="Traditional kitchen renovation after" class="portfolio-img after">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Traditional Kitchen Remodel</h3>
+                                    <p class="portfolio-item__location">Paramus, NJ</p>
+                                    <p class="portfolio-item__description">Classic design with custom millwork, granite countertops, and subway tile backsplash.</p>
+                                    <div class="portfolio-item__toggle">
+                                        <span class="toggle-label">Before</span>
+                                        <div class="toggle-switch">
+                                            <input type="checkbox" class="before-after-toggle">
+                                            <span class="slider"></span>
+                                        </div>
+                                        <span class="toggle-label">After</span>
+                                    </div>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 4 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-home"></i> Kitchen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bathroom Projects -->
+                    <div class="portfolio-item" data-category="bathrooms">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/bathroom-1-before.jpg" alt="Master bathroom renovation before" class="portfolio-img before">
+                            <img src="assets/images/portfolio/bathroom-1-after.jpg" alt="Master bathroom renovation after" class="portfolio-img after">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Luxury Master Bathroom</h3>
+                                    <p class="portfolio-item__location">Tenafly, NJ</p>
+                                    <p class="portfolio-item__description">Spa-like retreat with walk-in shower, soaking tub, and custom vanity.</p>
+                                    <div class="portfolio-item__toggle">
+                                        <span class="toggle-label">Before</span>
+                                        <div class="toggle-switch">
+                                            <input type="checkbox" class="before-after-toggle">
+                                            <span class="slider"></span>
+                                        </div>
+                                        <span class="toggle-label">After</span>
+                                    </div>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 2 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-bath"></i> Bathroom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="bathrooms">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/bathroom-2-before.jpg" alt="Guest bathroom renovation before" class="portfolio-img before">
+                            <img src="assets/images/portfolio/bathroom-2-after.jpg" alt="Guest bathroom renovation after" class="portfolio-img after">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Guest Bathroom Makeover</h3>
+                                    <p class="portfolio-item__location">Englewood, NJ</p>
+                                    <p class="portfolio-item__description">Compact design maximizing space with modern fixtures and elegant tile work.</p>
+                                    <div class="portfolio-item__toggle">
+                                        <span class="toggle-label">Before</span>
+                                        <div class="toggle-switch">
+                                            <input type="checkbox" class="before-after-toggle">
+                                            <span class="slider"></span>
+                                        </div>
+                                        <span class="toggle-label">After</span>
+                                    </div>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 1 week</span>
+                                        <span class="detail-item"><i class="fas fa-bath"></i> Bathroom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Addition Projects -->
+                    <div class="portfolio-item" data-category="additions">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/addition-1.jpg" alt="Two-story home addition" class="portfolio-img">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Two-Story Addition</h3>
+                                    <p class="portfolio-item__location">Bergenfield, NJ</p>
+                                    <p class="portfolio-item__description">Master suite addition with walk-in closet and luxury bathroom.</p>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 10 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-home"></i> Addition</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="additions">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/addition-2.jpg" alt="Sunroom addition" class="portfolio-img">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Sunroom Extension</h3>
+                                    <p class="portfolio-item__location">Hackensack, NJ</p>
+                                    <p class="portfolio-item__description">Bright sunroom addition with vaulted ceilings and panoramic windows.</p>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 6 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-home"></i> Addition</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Basement Projects -->
+                    <div class="portfolio-item" data-category="basements">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/basement-1.jpg" alt="Entertainment basement" class="portfolio-img">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Entertainment Basement</h3>
+                                    <p class="portfolio-item__location">Fort Lee, NJ</p>
+                                    <p class="portfolio-item__description">Complete basement transformation with bar, media area, and game room.</p>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 5 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-stairs"></i> Basement</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="basements">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/basement-2.jpg" alt="Home office basement" class="portfolio-img">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Home Office Suite</h3>
+                                    <p class="portfolio-item__location">Closter, NJ</p>
+                                    <p class="portfolio-item__description">Professional home office with built-in desks and storage solutions.</p>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 4 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-stairs"></i> Basement</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deck Projects -->
+                    <div class="portfolio-item" data-category="decks">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/deck-1.jpg" alt="Multi-level deck" class="portfolio-img">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Multi-Level Deck</h3>
+                                    <p class="portfolio-item__location">Cresskill, NJ</p>
+                                    <p class="portfolio-item__description">Expansive deck with multiple levels, built-in seating, and pergola.</p>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 3 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-tree"></i> Outdoor</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="decks">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/deck-2.jpg" alt="Outdoor kitchen deck" class="portfolio-img">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Outdoor Kitchen Deck</h3>
+                                    <p class="portfolio-item__location">Demarest, NJ</p>
+                                    <p class="portfolio-item__description">Custom deck with built-in outdoor kitchen and dining area.</p>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 4 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-tree"></i> Outdoor</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Millwork Projects -->
+                    <div class="portfolio-item" data-category="millwork">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/millwork-1.jpg" alt="Built-in bookcase" class="portfolio-img">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Custom Built-in Library</h3>
+                                    <p class="portfolio-item__location">Alpine, NJ</p>
+                                    <p class="portfolio-item__description">Floor-to-ceiling built-in bookcases with custom molding and lighting.</p>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 2 weeks</span>
+                                        <span class="detail-item"><i class="fas fa-hammer"></i> Millwork</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="millwork">
+                        <div class="portfolio-item__image">
+                            <img src="assets/images/portfolio/millwork-2.jpg" alt="Custom mantel" class="portfolio-img">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__content">
+                                    <h3>Custom Fireplace Mantel</h3>
+                                    <p class="portfolio-item__location">Norwood, NJ</p>
+                                    <p class="portfolio-item__description">Handcrafted mantel with intricate details and matching built-ins.</p>
+                                    <div class="portfolio-item__details">
+                                        <span class="detail-item"><i class="fas fa-clock"></i> 1 week</span>
+                                        <span class="detail-item"><i class="fas fa-hammer"></i> Millwork</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="portfolio__load-more">
+                    <button class="btn btn--secondary" id="load-more-btn">
+                        <i class="fas fa-plus"></i>
+                        Load More Projects
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Process -->
+        <section class="project-process section">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <span class="section__subtitle">Our Project Process</span>
+                    <h2 class="section__title">How We Bring Your Vision to Life</h2>
+                </div>
+                
+                <div class="process-timeline">
+                    <div class="process-item">
+                        <div class="process-item__number">1</div>
+                        <div class="process-item__content">
+                            <h3>Initial Consultation</h3>
+                            <p>We meet with you to discuss your vision, needs, and budget for your project.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item">
+                        <div class="process-item__number">2</div>
+                        <div class="process-item__content">
+                            <h3>Design & Planning</h3>
+                            <p>Our team creates detailed plans, 3D renderings, and material selections.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item">
+                        <div class="process-item__number">3</div>
+                        <div class="process-item__content">
+                            <h3>Construction</h3>
+                            <p>Expert craftsmen execute the project with regular updates and quality control.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-item">
+                        <div class="process-item__number">4</div>
+                        <div class="process-item__content">
+                            <h3>Final Walkthrough</h3>
+                            <p>We review the completed project together and provide warranty documentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section section">
+            <div class="container">
+                <div class="cta-section__content">
+                    <h2 class="cta-section__title">Ready to Start Your Dream Project?</h2>
+                    <p class="cta-section__description">
+                        Join hundreds of satisfied customers who have transformed their homes with Bergen Westchester Construction.
+                    </p>
+                    <div class="cta-section__buttons">
+                        <a href="index.html#contact" class="btn btn--primary btn--large">
+                            <i class="fas fa-calculator"></i>
+                            Get Free Estimate
+                        </a>
+                        <a href="tel:+12015550123" class="btn btn--secondary btn--large">
+                            <i class="fas fa-phone"></i>
+                            Call (201) 555-0123
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <div class="footer__logo">
+                            <span class="footer__logo-text">Bergen Westchester<br><small>Construction Group, LLC</small></span>
+                        </div>
+                        <p class="footer__description">
+                            Building trust and delivering peace of mind in NJ & NY since 1990. 
+                            Your vision, our expertise.
+                        </p>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="services.html#kitchens" class="footer__link">Kitchen Renovations</a></li>
+                            <li><a href="services.html#bathrooms" class="footer__link">Bathroom Remodeling</a></li>
+                            <li><a href="services.html#additions" class="footer__link">Home Additions</a></li>
+                            <li><a href="services.html#basements" class="footer__link">Basement Finishing</a></li>
+                            <li><a href="services.html#decks" class="footer__link">Decks & Outdoor</a></li>
+                            <li><a href="services.html#millwork" class="footer__link">Custom Millwork</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__links">
+                            <li><a href="index.html#about" class="footer__link">About Us</a></li>
+                            <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                            <li><a href="index.html#reviews" class="footer__link">Reviews</a></li>
+                            <li><a href="index.html#process" class="footer__link">Our Process</a></li>
+                            <li><a href="index.html#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__title">Contact Info</h4>
+                        <div class="footer__contact">
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Bergen County, NJ 07601</p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:+12015550123">(201) 555-0123</a></p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:info@bergenwestchester.com">info@bergenwestchester.com</a></p>
+                        </div>
+                        <div class="footer__payment">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p class="footer__copyright">
+                        &copy; 2024 Bergen Westchester Construction Group, LLC. All rights reserved.
+                    </p>
+                    <div class="footer__legal">
+                        <a href="#" class="footer__legal-link">Privacy Policy</a>
+                        <a href="#" class="footer__legal-link">Terms of Service</a>
+                        <a href="#" class="footer__legal-link">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

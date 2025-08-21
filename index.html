@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bergen Westchester Construction Group, LLC - Professional Construction Services in NJ & NY</title>
+    <meta name="description" content="Premier residential & commercial construction company serving NJ & NY since 1990. Licensed, insured, and satisfaction guaranteed.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="assets/images/logo.png" alt="Bergen Westchester Construction Group, LLC" class="nav__logo-img">
+                <span class="nav__logo-text">Bergen Westchester<br><small>Construction Group, LLC</small></span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#reviews" class="nav__link">Reviews</a></li>
+                    <li class="nav__item"><a href="#process" class="nav__link">Process</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <a href="tel:+12015550123" class="nav__phone">
+                    <i class="fas fa-phone"></i>
+                    <span>(201) 555-0123</span>
+                </a>
+                <a href="#contact" class="btn btn--primary">Request Estimate</a>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Video Section -->
+        <section class="hero-video section" id="home">
+            <div class="hero-video__background">
+                <video class="hero-video__video" autoplay muted loop playsinline>
+                    <source src="assets/videos/construction-professional.mp4" type="video/mp4">
+                    <source src="assets/videos/construction-professional.webm" type="video/webm">
+                </video>
+                <div class="hero-video__fallback"></div>
+            </div>
+            
+            <div class="hero-video__overlay"></div>
+            
+            <div class="container">
+                <div class="hero-video__content">
+                    <div class="hero-video__badges">
+                        <span class="badge badge--video">Licensed & Insured</span>
+                        <span class="badge badge--video">Since 1990</span>
+                        <span class="badge badge--video">5-Year Warranty</span>
+                    </div>
+                    
+                    <h1 class="hero-video__title">
+                        Building Trust & <br>
+                        Delivering <span class="hero-video__title--accent">Peace of Mind</span><br>
+                        <span class="hero-video__title--location">in NJ & NY</span>
+                    </h1>
+                    
+                    <p class="hero-video__subtitle">
+                        Residential & Commercial Construction Excellence Since 1990
+                    </p>
+                    
+                    <div class="hero-video__cta">
+                        <a href="#contact" class="btn btn--primary btn--large btn--video">
+                            <i class="fas fa-calculator"></i>
+                            Request Free Estimate
+                        </a>
+                        <a href="tel:+12015550123" class="btn btn--secondary btn--large btn--video">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                    </div>
+                    
+                    <div class="trust-indicators trust-indicators--video">
+                        <div class="trust-indicator">
+                            <div class="trust-indicator__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="trust-indicator__text">5.0 Google Reviews</span>
+                        </div>
+                        <div class="trust-indicator">
+                            <i class="fas fa-shield-alt trust-indicator__icon"></i>
+                            <span class="trust-indicator__text">Fully Insured</span>
+                        </div>
+                        <div class="trust-indicator">
+                            <i class="fas fa-award trust-indicator__icon"></i>
+                            <span class="trust-indicator__text">BBB A+ Rating</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-video__controls">
+                    <button class="hero-video__play-pause" id="videoPlayPause">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <button class="hero-video__mute" id="videoMute">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                </div>
+                
+                <div class="hero-video__scroll-indicator">
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <span class="scroll-text">Scroll to explore</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__container">
+                    <div class="about__content">
+                        <div class="section__header">
+                            <span class="section__subtitle">About Bergen Westchester</span>
+                            <h2 class="section__title">Three Decades of Construction Excellence</h2>
+                        </div>
+                        
+                        <div class="about__text">
+                            <p>
+                                Founded in 1990 by Michael Venezia, Bergen Westchester Construction LLC has been 
+                                transforming homes and commercial spaces across New Jersey and New York for over 
+                                three decades. Our commitment to quality craftsmanship, attention to detail, and 
+                                customer satisfaction has made us the trusted choice for discerning property owners.
+                            </p>
+                            
+                            <p>
+                                We pride ourselves on delivering projects on time, within budget, and exceeding 
+                                expectations. Every project comes with our comprehensive 5-year warranty and 
+                                satisfaction guarantee.
+                            </p>
+                        </div>
+                        
+                        <div class="about__features">
+                            <div class="feature">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h4>Licensed & Fully Insured</h4>
+                                    <p>Complete protection for your investment</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>5-Year Warranty</h4>
+                                    <p>Satisfaction guaranteed on all work</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Expert Team</h4>
+                                    <p>Skilled craftsmen with decades of experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__image">
+                        <img src="assets/images/michael-venezia.svg" alt="Michael Venezia, Owner of Bergen Westchester Construction Group" class="about__img">
+                        <div class="about__image-info">
+                            <h4>Michael Venezia</h4>
+                            <p>Owner & Master Craftsman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <span class="section__subtitle">Our Services</span>
+                    <h2 class="section__title">Complete Construction Solutions</h2>
+                    <p class="section__description">
+                        From concept to completion, we handle every aspect of your residential 
+                        and commercial construction needs with precision and care.
+                    </p>
+                </div>
+                
+                <div class="services__container">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="service-card__title">Kitchen Renovations</h3>
+                        <p class="service-card__description">
+                            Transform your kitchen into a culinary masterpiece with custom cabinetry, 
+                            premium countertops, and modern appliances.
+                        </p>
+                        <a href="services.html#kitchens" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-bath"></i>
+                        </div>
+                        <h3 class="service-card__title">Bathroom Remodeling</h3>
+                        <p class="service-card__description">
+                            Create your personal spa retreat with luxury fixtures, custom tile work, 
+                            and innovative storage solutions.
+                        </p>
+                        <a href="services.html#bathrooms" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="service-card__title">Home Additions</h3>
+                        <p class="service-card__description">
+                            Expand your living space with seamlessly integrated additions that 
+                            enhance both function and value.
+                        </p>
+                        <a href="services.html#additions" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-stairs"></i>
+                        </div>
+                        <h3 class="service-card__title">Basement Finishing</h3>
+                        <p class="service-card__description">
+                            Convert your basement into valuable living space - entertainment rooms, 
+                            home offices, or guest suites.
+                        </p>
+                        <a href="services.html#basements" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="service-card__title">Decks & Outdoor</h3>
+                        <p class="service-card__description">
+                            Extend your living space outdoors with custom decks, patios, 
+                            and outdoor entertainment areas.
+                        </p>
+                        <a href="services.html#decks" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="service-card__title">Custom Millwork</h3>
+                        <p class="service-card__description">
+                            Handcrafted built-ins, crown molding, and custom woodwork 
+                            that adds character and value.
+                        </p>
+                        <a href="services.html#millwork" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="services__cta">
+                    <a href="services.html" class="btn btn--primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process section" id="process">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <span class="section__subtitle">Our Process</span>
+                    <h2 class="section__title">From Vision to Reality</h2>
+                    <p class="section__description">
+                        Our proven 4-step process ensures your project is completed on time, 
+                        within budget, and exceeds your expectations.
+                    </p>
+                </div>
+                
+                <div class="process__timeline">
+                    <div class="process-step">
+                        <div class="process-step__number">1</div>
+                        <div class="process-step__icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="process-step__content">
+                            <h3>Discover</h3>
+                            <p>We listen to your vision, assess your space, and understand your needs and budget to create the perfect plan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-step__number">2</div>
+                        <div class="process-step__icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <div class="process-step__content">
+                            <h3>Design</h3>
+                            <p>Our team creates detailed plans and 3D renderings, selecting materials and finishes that match your style.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-step__number">3</div>
+                        <div class="process-step__icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <div class="process-step__content">
+                            <h3>Build</h3>
+                            <p>Expert craftsmen bring your vision to life with meticulous attention to detail and regular progress updates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-step__number">4</div>
+                        <div class="process-step__icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="process-step__content">
+                            <h3>Enjoy</h3>
+                            <p>Walk through your completed project, receive your warranty documentation, and start enjoying your new space!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section" id="reviews">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <span class="section__subtitle">Client Reviews</span>
+                    <h2 class="section__title">What Our Clients Say</h2>
+                </div>
+                
+                <div class="testimonials__container">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-card__quote">
+                            "Bergen Westchester transformed our outdated kitchen into a stunning modern space. 
+                            Michael and his team were professional, punctual, and the quality of work exceeded 
+                            our expectations. We couldn't be happier!"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">SJ</div>
+                            <div class="testimonial-card__info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Ridgewood, NJ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-card__quote">
+                            "The attention to detail in our bathroom renovation was incredible. Every tile, 
+                            every fixture was perfectly placed. The project was completed on time and within 
+                            budget. Highly recommended!"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">DC</div>
+                            <div class="testimonial-card__info">
+                                <h4>David Chen</h4>
+                                <p>Paramus, NJ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-card__quote">
+                            "Our basement was completely transformed into a beautiful family room. 
+                            The craftsmanship is outstanding and the team was a pleasure to work with. 
+                            We're already planning our next project with them!"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">MR</div>
+                            <div class="testimonial-card__info">
+                                <h4>Maria Rodriguez</h4>
+                                <p>Englewood, NJ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__navigation">
+                    <button class="testimonial-nav prev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <button class="dot active" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button>
+                        <button class="dot" data-slide="2"></button>
+                    </div>
+                    <button class="testimonial-nav next" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <span class="section__subtitle">Get In Touch</span>
+                    
+                    <!-- Animated Logo Video -->
+                    <div class="animated-logo-video">
+                        <video class="logo-video" autoplay muted loop playsinline>
+                            <source src="assets/videos/animated-logo.mp4" type="video/mp4">
+                            <!-- Fallback for browsers that don't support video -->
+                            <div class="logo-fallback">
+                                <div class="logo-container">
+                                    <div class="logo-icon">
+                                        <i class="fas fa-hammer"></i>
+                                    </div>
+                                    <div class="logo-text">
+                                        <span class="logo-main">Bergen Westchester</span>
+                                        <span class="logo-sub">Construction Group</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </video>
+                    </div>
+                    
+                    <h2 class="section__title">Ready to Start Your Project?</h2>
+                    <p class="section__description">
+                        Contact us today for a free consultation and estimate. 
+                        Let's discuss how we can bring your vision to life.
+                    </p>
+                </div>
+                
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact__details">
+                                <h4>Our Location</h4>
+                                <p>123 Main Street<br>Bergen County, NJ 07601</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact__details">
+                                <h4>Call Us</h4>
+                                <a href="tel:+12015550123">(201) 555-0123</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact__details">
+                                <h4>Email Us</h4>
+                                <a href="mailto:info@bergenwestchester.com">info@bergenwestchester.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact__details">
+                                <h4>Business Hours</h4>
+                                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" class="form__input" placeholder=" " required>
+                            <label for="name" class="form__label">Full Name</label>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" class="form__input" placeholder=" " required>
+                            <label for="email" class="form__label">Email Address</label>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="tel" id="phone" name="phone" class="form__input" placeholder=" " required>
+                            <label for="phone" class="form__label">Phone Number</label>
+                        </div>
+                        
+                        <div class="form__group">
+                            <select id="service" name="service" class="form__select" required>
+                                <option value="">Select a Service</option>
+                                <option value="kitchen">Kitchen Renovation</option>
+                                <option value="bathroom">Bathroom Remodeling</option>
+                                <option value="addition">Home Addition</option>
+                                <option value="basement">Basement Finishing</option>
+                                <option value="deck">Deck & Outdoor</option>
+                                <option value="millwork">Custom Millwork</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group">
+                            <textarea id="message" name="message" class="form__textarea" placeholder=" " rows="5" required></textarea>
+                            <label for="message" class="form__label">Project Details</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <div class="footer__logo">
+                            <span class="footer__logo-text">Bergen Westchester<br><small>Construction Group, LLC</small></span>
+                        </div>
+                        <p class="footer__description">
+                            Building trust and delivering peace of mind in NJ & NY since 1990. 
+                            Your vision, our expertise.
+                        </p>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="services.html#kitchens" class="footer__link">Kitchen Renovations</a></li>
+                            <li><a href="services.html#bathrooms" class="footer__link">Bathroom Remodeling</a></li>
+                            <li><a href="services.html#additions" class="footer__link">Home Additions</a></li>
+                            <li><a href="services.html#basements" class="footer__link">Basement Finishing</a></li>
+                            <li><a href="services.html#decks" class="footer__link">Decks & Outdoor</a></li>
+                            <li><a href="services.html#millwork" class="footer__link">Custom Millwork</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__links">
+                            <li><a href="#about" class="footer__link">About Us</a></li>
+                            <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                            <li><a href="#reviews" class="footer__link">Reviews</a></li>
+                            <li><a href="#process" class="footer__link">Our Process</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__title">Contact Info</h4>
+                        <div class="footer__contact">
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Bergen County, NJ 07601</p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:+12015550123">(201) 555-0123</a></p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:info@bergenwestchester.com">info@bergenwestchester.com</a></p>
+                        </div>
+                        <div class="footer__payment">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p class="footer__copyright">
+                        &copy; 2024 Bergen Westchester Construction Group, LLC. All rights reserved.
+                    </p>
+                    <div class="footer__legal">
+                        <a href="#" class="footer__legal-link">Privacy Policy</a>
+                        <a href="#" class="footer__legal-link">Terms of Service</a>
+                        <a href="#" class="footer__legal-link">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
