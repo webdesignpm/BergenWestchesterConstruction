@@ -488,8 +488,10 @@ function validateField(field) {
             errorMessage = 'Please enter a valid email address';
         }
     } else if (fieldType === 'tel' && value) {
-        const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
-        if (!phoneRegex.test(value.replace(/[\s\-\(\)]/g, ''))) {
+        // Remove formatting characters and validate
+        const cleanPhone = value.replace(/[\s\-\(\)]/g, '');
+        const phoneRegex = /^[\+]?[1-9][\d]{9,14}$/;
+        if (!phoneRegex.test(cleanPhone)) {
             isValid = false;
             errorMessage = 'Please enter a valid phone number';
         }
