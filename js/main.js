@@ -450,7 +450,7 @@ if (typeof ScrollReveal !== 'undefined') {
 }
 
 /*===== FORM VALIDATION ENHANCEMENTS =====*/
-const formInputs = document.querySelectorAll('.form__input, .form__textarea');
+const formInputs = document.querySelectorAll('.form__input, .form__textarea, .form__select');
 
 formInputs.forEach(input => {
     input.addEventListener('blur', function() {
@@ -462,6 +462,15 @@ formInputs.forEach(input => {
             validateField(this);
         }
     });
+    
+    // Add change event for select elements
+    if (input.tagName.toLowerCase() === 'select') {
+        input.addEventListener('change', function() {
+            if (this.classList.contains('error')) {
+                validateField(this);
+            }
+        });
+    }
 });
 
 function validateField(field) {
@@ -495,6 +504,12 @@ function validateField(field) {
             isValid = false;
             errorMessage = 'Please enter a valid phone number';
         }
+    } else if (field.tagName.toLowerCase() === 'select' && field.hasAttribute('required') && !value) {
+        isValid = false;
+        errorMessage = 'Please select an option';
+    } else if (field.tagName.toLowerCase() === 'textarea' && field.hasAttribute('required') && !value) {
+        isValid = false;
+        errorMessage = 'This field is required';
     }
     
     if (!isValid) {
